@@ -154,21 +154,28 @@ belong in `hardware/tools/`.
 
 Identical in every OpenDrone board repo. Do not edit here; edit the template.
 
-- Never text-edit `.kicad_sch`, `.kicad_pcb` or `.kicad_dru`. Use KiCad, or
-  approved KiCad-aware tooling for scripted changes. `.kicad_pro` is JSON and
-  may be edited directly for metadata.
-- Metadata yes, connections no. An agent may write BOM and documentation fields
-  such as MPN, Manufacturer, LCSC, Cost, Datasheet and text variables. An agent
-  may not change nets, wiring, routing, placement, footprint assignment or any
+- **Never text-edit** `.kicad_sch`, `.kicad_pcb` or `.kicad_dru`. Use KiCad, or
+  kicad-skip / the pcbnew API for scripted changes. `.kicad_pro` is JSON and may
+  be edited directly for metadata.
+- **Metadata yes, connections no.** An agent may write BOM and documentation
+  fields (MPN, Manufacturer, LCSC, Cost, Datasheet, text variables). An agent
+  may not change nets, wiring, routing, placement, footprint assignment, or any
   value that changes the circuit.
-- Close KiCad before any automated write to a KiCad file. KiCad caches library
-  tables and project data while open.
-- Reuse before drawing. Check the `OpenDrone` library first. Use the local
-  `lib` only when the shared catalogue has nothing appropriate.
-- One person holds the board layout at a time. KiCad board files do not merge
-  safely.
-- Run ERC and DRC before every pull request. New finding types or increased
-  finding counts require review before merge.
+- **Close KiCad before any write to a KiCad file.** KiCad caches library tables
+  at process start and overwrites files on save.
+- **Reuse before you draw.** Check the `OpenDrone` library and its
+  `PARTS-USED.md` first. If the part is there we have already sourced,
+  footprinted and shipped it, and its symbol links to the exact committed
+  datasheet: place it from `OpenDrone`. Draw a new part into `lib` only when
+  the catalogue has nothing that fits, imported with
+  `easyeda2kicad` from its LCSC number. Pulling a newer catalogue is a
+  deliberate, reviewed commit: `git submodule update --remote
+  hardware/KiCad-Library`, then DRC.
+- **One person holds a board layout at a time.** KiCad files do not merge. Say
+  on Discord that you are taking it. See [CONTRIBUTING.md](CONTRIBUTING.md).
+- **Run ERC and DRC before every pull request.** Existing approved findings
+  may remain; a new type or increased count must be reviewed before merge.
+  Commands are in Environment above.
 
 ## Revisions
 

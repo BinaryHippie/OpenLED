@@ -58,15 +58,6 @@ compatibility is treated as final.
   applicable.
 - The project is authored in KiCad 10.
 
-## Prior art
-
-- Commercial FPV arm LED strips demonstrate the usefulness of compact,
-  arm-mounted addressable lighting.
-- SpeedyBee arm LED products were reviewed as a reference for compact layout,
-  power distribution and end-of-board bulk capacitance.
-- OpenDrone flight-controller designs provide the intended integration context
-  for 5 V power and LED-strip data.
-
 ## Design questions
 
 - Confirm physical fit and mounting method on each intended OpenFrame size.
