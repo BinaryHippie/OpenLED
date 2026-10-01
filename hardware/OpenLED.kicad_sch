@@ -948,13 +948,43 @@
 	)
 	(wire
 		(pts
-			(xy 204.47 113.03) (xy 204.47 114.3)
+			(xy 143.51 114.3) (xy 143.51 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "080eb71c-dd09-4f50-80b8-13f64309ca2e")
+	)
+	(wire
+		(pts
+			(xy 210.82 124.46) (xy 210.82 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "181b6a05-4862-48c3-8ac8-396512cac8c9")
+	)
+	(wire
+		(pts
+			(xy 210.82 114.3) (xy 210.82 115.57)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "25bd464d-78b4-4f16-82c8-6b1e33288090")
+	)
+	(wire
+		(pts
+			(xy 118.11 123.19) (xy 118.11 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2da85077-39cf-4bfe-b0df-79940eaa223a")
 	)
 	(wire
 		(pts
@@ -975,6 +1005,16 @@
 			(type default)
 		)
 		(uuid "40e49e6f-3a35-4bd2-a89e-625a0f03c4a3")
+	)
+	(wire
+		(pts
+			(xy 167.64 114.3) (xy 167.64 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "41bae598-0dd8-4afd-8e48-4a198a4d4cb9")
 	)
 	(wire
 		(pts
@@ -1038,7 +1078,7 @@
 	)
 	(wire
 		(pts
-			(xy 90.17 124.46) (xy 90.17 123.19)
+			(xy 91.44 124.46) (xy 91.44 123.19)
 		)
 		(stroke
 			(width 0)
@@ -1068,6 +1108,26 @@
 	)
 	(wire
 		(pts
+			(xy 143.51 123.19) (xy 143.51 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a4e8e25b-b46b-4479-96eb-8be91a3c4b11")
+	)
+	(wire
+		(pts
+			(xy 167.64 123.19) (xy 167.64 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aca8f555-87ef-4594-af5a-43246dc31125")
+	)
+	(wire
+		(pts
 			(xy 186.69 91.44) (xy 186.69 92.71)
 		)
 		(stroke
@@ -1075,6 +1135,16 @@
 			(type default)
 		)
 		(uuid "be49bdad-5eb0-4545-ad09-a03bac56096e")
+	)
+	(wire
+		(pts
+			(xy 194.31 123.19) (xy 194.31 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c5d7b8e6-bf24-4625-b0a4-1b027e1bbb5c")
 	)
 	(wire
 		(pts
@@ -1088,7 +1158,7 @@
 	)
 	(wire
 		(pts
-			(xy 90.17 114.3) (xy 90.17 115.57)
+			(xy 91.44 114.3) (xy 91.44 115.57)
 		)
 		(stroke
 			(width 0)
@@ -1136,9 +1206,29 @@
 		)
 		(uuid "d3f00350-5d73-47b0-8d7f-d575b3d1dde0")
 	)
+	(wire
+		(pts
+			(xy 194.31 114.3) (xy 194.31 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f7053ac2-760b-48b5-9dda-3a11ca4b1057")
+	)
+	(wire
+		(pts
+			(xy 118.11 114.3) (xy 118.11 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f97e5b69-fd1a-4fb0-bd6c-675ee8040914")
+	)
 	(symbol
-		(lib_id "power:GND")
-		(at 204.47 121.92 0)
+		(lib_id "Device:C")
+		(at 167.64 119.38 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1147,9 +1237,31 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "0fa139ba-f413-4c0f-85e7-8f2a748ea1bb")
-		(property "Reference" "#PWR07"
-			(at 204.47 128.27 0)
+		(uuid "0399381e-afc3-451a-ab2e-6deb824ab850")
+		(property "Reference" "C5"
+			(at 171.45 118.1099 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100nF"
+			(at 171.45 120.6499 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "lib:C_0402_1005Metric"
+			(at 168.6052 123.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1159,9 +1271,101 @@
 				)
 			)
 		)
-		(property "Value" "GND"
-			(at 204.47 127 0)
+		(property "Datasheet" "https://product.samsungsem.com/mlcc/CL05B104KO5NNN.do"
+			(at 167.64 119.38 0)
 			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "100nF 16V X7R 0402 MLCC"
+			(at 167.64 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "CL05B104KO5NNNC"
+			(at 167.64 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 167.64 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C1525"
+			(at 167.64 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "598fc5b4-2e69-49c7-bbef-a71a3f015afb")
+		)
+		(pin "1"
+			(uuid "bf117754-15ce-4f48-b3fd-f675ceeb4162")
+		)
+		(instances
+			(project "OpenLED"
+				(path "/9d3327ce-e007-4f54-8e19-0e924e6b729b"
+					(reference "C5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 194.31 114.3 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "08ae5c50-1282-4c5f-9714-8da065befd83")
+		(property "Reference" "#PWR025"
+			(at 194.31 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+5V"
+			(at 194.31 109.22 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1171,7 +1375,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 204.47 121.92 0)
+			(at 194.31 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1182,7 +1386,86 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 204.47 121.92 0)
+			(at 194.31 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 194.31 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "881a0c53-4f1f-40ff-9c71-d94ad3442241")
+		)
+		(instances
+			(project "OpenLED"
+				(path "/9d3327ce-e007-4f54-8e19-0e924e6b729b"
+					(reference "#PWR025")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 143.51 124.46 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "09d69b25-f9ff-4d12-a23c-86b4411579f9")
+		(property "Reference" "#PWR022"
+			(at 143.51 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 143.51 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 143.51 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 143.51 124.46 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1193,7 +1476,86 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 204.47 121.92 0)
+			(at 143.51 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0c56d5b1-736b-48b8-b508-81c134c88cd1")
+		)
+		(instances
+			(project "OpenLED"
+				(path "/9d3327ce-e007-4f54-8e19-0e924e6b729b"
+					(reference "#PWR022")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 210.82 124.46 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0fa139ba-f413-4c0f-85e7-8f2a748ea1bb")
+		(property "Reference" "#PWR07"
+			(at 210.82 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 210.82 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 210.82 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 210.82 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 210.82 124.46 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1380,7 +1742,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "193ab0f2-af83-4e27-ba27-8614c1aad975")
@@ -1453,7 +1815,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 204.47 118.11 0)
+		(at 210.82 119.38 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1464,7 +1826,7 @@
 		(fields_autoplaced yes)
 		(uuid "1b9191cd-5d69-480d-9364-c3ff8039fcfd")
 		(property "Reference" "C2"
-			(at 208.28 116.8399 0)
+			(at 214.63 118.1099 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1475,7 +1837,7 @@
 			)
 		)
 		(property "Value" "10uF"
-			(at 208.28 119.3799 0)
+			(at 214.63 120.6499 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1485,8 +1847,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 205.4352 121.92 0)
+		(property "Footprint" "lib:C_0603_1608Metric"
+			(at 211.7852 123.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1497,7 +1859,7 @@
 			)
 		)
 		(property "Datasheet" "https://product.samsungsem.com/mlcc/CL10A106KO8NQN.do"
-			(at 204.47 118.11 0)
+			(at 210.82 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1508,7 +1870,7 @@
 			)
 		)
 		(property "Description" "10uF 16V X5R 0603 MLCC"
-			(at 204.47 118.11 0)
+			(at 210.82 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1519,7 +1881,7 @@
 			)
 		)
 		(property "LCSC" "C962136"
-			(at 204.47 118.11 0)
+			(at 210.82 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1530,7 +1892,7 @@
 			)
 		)
 		(property "MPN" "CL10A106KO8NQNC"
-			(at 204.47 118.11 0)
+			(at 210.82 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1541,7 +1903,7 @@
 			)
 		)
 		(property "Manufacturer" "Samsung Electro-Mechanics"
-			(at 204.47 118.11 0)
+			(at 210.82 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2045,6 +2407,121 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C")
+		(at 143.51 119.38 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "54f8864e-8abe-49ab-bf38-e33331fbbd21")
+		(property "Reference" "C4"
+			(at 147.32 118.1099 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100nF"
+			(at 147.32 120.6499 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "lib:C_0402_1005Metric"
+			(at 144.4752 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://product.samsungsem.com/mlcc/CL05B104KO5NNN.do"
+			(at 143.51 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "100nF 16V X7R 0402 MLCC"
+			(at 143.51 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "CL05B104KO5NNNC"
+			(at 143.51 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 143.51 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C1525"
+			(at 143.51 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "22a4a657-7dd4-438d-9611-aa66ac6719a9")
+		)
+		(pin "1"
+			(uuid "1c0acc8a-1924-4a62-a28d-c62d92549458")
+		)
+		(instances
+			(project "OpenLED"
+				(path "/9d3327ce-e007-4f54-8e19-0e924e6b729b"
+					(reference "C4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "LED:WS2812B")
 		(at 135.89 100.33 0)
 		(unit 1)
@@ -2173,7 +2650,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "59d1a0a1-e8ce-414a-8ff4-452d87fc1633")
@@ -2244,7 +2721,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 90.17 124.46 0)
+		(at 91.44 124.46 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2255,7 +2732,7 @@
 		(fields_autoplaced yes)
 		(uuid "6119153d-4fcd-48e2-ad9d-18a9ba90da6e")
 		(property "Reference" "#PWR06"
-			(at 90.17 130.81 0)
+			(at 91.44 130.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2266,7 +2743,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 90.17 129.54 0)
+			(at 91.44 129.54 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2277,7 +2754,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 90.17 124.46 0)
+			(at 91.44 124.46 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2288,7 +2765,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 90.17 124.46 0)
+			(at 91.44 124.46 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2299,7 +2776,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 90.17 124.46 0)
+			(at 91.44 124.46 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2678,7 +3155,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 90.17 119.38 0)
+		(at 194.31 119.38 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2687,9 +3164,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "8a06dcbe-8a61-4bd1-bfaa-1fdd915f398e")
-		(property "Reference" "C1"
-			(at 93.98 118.1099 0)
+		(uuid "71f3b94d-c631-438b-a9a5-b1a3b4aa9092")
+		(property "Reference" "C6"
+			(at 198.12 118.1099 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2699,8 +3176,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10uF"
-			(at 93.98 120.6499 0)
+		(property "Value" "100nF"
+			(at 198.12 120.6499 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2710,8 +3187,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 91.1352 123.19 0)
+		(property "Footprint" "lib:C_0402_1005Metric"
+			(at 195.2752 123.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2721,8 +3198,8 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://product.samsungsem.com/mlcc/CL10A106KO8NQN.do"
-			(at 90.17 119.38 0)
+		(property "Datasheet" "https://product.samsungsem.com/mlcc/CL05B104KO5NNN.do"
+			(at 194.31 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2732,8 +3209,8 @@
 				)
 			)
 		)
-		(property "Description" "10uF 16V X5R 0603 MLCC"
-			(at 90.17 119.38 0)
+		(property "Description" "100nF 16V X7R 0402 MLCC"
+			(at 194.31 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2743,19 +3220,8 @@
 				)
 			)
 		)
-		(property "LCSC" "C962136"
-			(at 90.17 119.38 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "CL10A106KO8NQNC"
-			(at 90.17 119.38 0)
+		(property "MPN" "CL05B104KO5NNNC"
+			(at 194.31 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2766,7 +3232,289 @@
 			)
 		)
 		(property "Manufacturer" "Samsung Electro-Mechanics"
-			(at 90.17 119.38 0)
+			(at 194.31 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C1525"
+			(at 194.31 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "9264e108-358f-4d62-8c8a-979d16788332")
+		)
+		(pin "1"
+			(uuid "95000440-b8ba-403e-983e-59b005b97925")
+		)
+		(instances
+			(project "OpenLED"
+				(path "/9d3327ce-e007-4f54-8e19-0e924e6b729b"
+					(reference "C6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 118.11 114.3 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7429fbd2-d4aa-403f-8b8c-749758bec6ae")
+		(property "Reference" "#PWR019"
+			(at 118.11 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+5V"
+			(at 118.11 109.22 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 118.11 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 118.11 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 118.11 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "654619ae-b7ee-4ecb-a316-2f0f6f2231b7")
+		)
+		(instances
+			(project "OpenLED"
+				(path "/9d3327ce-e007-4f54-8e19-0e924e6b729b"
+					(reference "#PWR019")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 143.51 114.3 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "77f101cf-1772-46fd-9a69-2174a84c1a82")
+		(property "Reference" "#PWR021"
+			(at 143.51 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+5V"
+			(at 143.51 109.22 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 143.51 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 143.51 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 143.51 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c09c57f7-91ed-4171-830b-87dc7b2a510a")
+		)
+		(instances
+			(project "OpenLED"
+				(path "/9d3327ce-e007-4f54-8e19-0e924e6b729b"
+					(reference "#PWR021")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 91.44 119.38 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8a06dcbe-8a61-4bd1-bfaa-1fdd915f398e")
+		(property "Reference" "C1"
+			(at 95.25 118.1099 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10uF"
+			(at 95.25 120.6499 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "lib:C_0603_1608Metric"
+			(at 92.4052 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://product.samsungsem.com/mlcc/CL10A106KO8NQN.do"
+			(at 91.44 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "10uF 16V X5R 0603 MLCC"
+			(at 91.44 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C962136"
+			(at 91.44 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "CL10A106KO8NQNC"
+			(at 91.44 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 91.44 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2786,6 +3534,85 @@
 			(project "OpenLED"
 				(path "/9d3327ce-e007-4f54-8e19-0e924e6b729b"
 					(reference "C1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 167.64 124.46 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8a5bcb8e-f3e3-4002-ae8b-4deb0880c40c")
+		(property "Reference" "#PWR024"
+			(at 167.64 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 167.64 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 167.64 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 167.64 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 167.64 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c5a0ddd3-f7cc-4a89-9ef3-36a486acdd74")
+		)
+		(instances
+			(project "OpenLED"
+				(path "/9d3327ce-e007-4f54-8e19-0e924e6b729b"
+					(reference "#PWR024")
 					(unit 1)
 				)
 			)
@@ -2872,7 +3699,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 204.47 113.03 0)
+		(at 210.82 114.3 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2883,7 +3710,7 @@
 		(fields_autoplaced yes)
 		(uuid "8c542673-007d-4c7e-b759-a99749c2cd3b")
 		(property "Reference" "#PWR012"
-			(at 204.47 116.84 0)
+			(at 210.82 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2894,7 +3721,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 204.47 107.95 0)
+			(at 210.82 109.22 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2904,7 +3731,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 204.47 113.03 0)
+			(at 210.82 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2915,7 +3742,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 204.47 113.03 0)
+			(at 210.82 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2926,7 +3753,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 204.47 113.03 0)
+			(at 210.82 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2956,7 +3783,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "96eb88da-c74c-411a-8582-20bad1b1740f")
@@ -3264,7 +4091,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 90.17 114.3 0)
+		(at 91.44 114.3 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3275,7 +4102,7 @@
 		(fields_autoplaced yes)
 		(uuid "b4c827c0-3e18-4483-8306-4f1d2e467784")
 		(property "Reference" "#PWR01"
-			(at 90.17 118.11 0)
+			(at 91.44 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3286,7 +4113,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 90.17 109.22 0)
+			(at 91.44 109.22 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3296,7 +4123,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 90.17 114.3 0)
+			(at 91.44 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3307,7 +4134,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 90.17 114.3 0)
+			(at 91.44 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3318,7 +4145,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 90.17 114.3 0)
+			(at 91.44 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3341,6 +4168,85 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 194.31 124.46 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b557c99d-c807-4dda-8f23-5d5a47b13a88")
+		(property "Reference" "#PWR026"
+			(at 194.31 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 194.31 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 194.31 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 194.31 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 194.31 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ca9df59d-3881-4ecd-8449-34b93c986b28")
+		)
+		(instances
+			(project "OpenLED"
+				(path "/9d3327ce-e007-4f54-8e19-0e924e6b729b"
+					(reference "#PWR026")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector_Generic:Conn_01x01")
 		(at 205.74 100.33 0)
 		(unit 1)
@@ -3348,7 +4254,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b63e945c-f3a0-4e61-a24c-1ef14d9aeddf")
@@ -3427,7 +4333,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c479af7a-377e-4f69-8cc8-569cfd0e26cf")
@@ -3571,6 +4477,85 @@
 			(project "OpenLED"
 				(path "/9d3327ce-e007-4f54-8e19-0e924e6b729b"
 					(reference "#PWR011")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 118.11 124.46 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d254f849-3b80-4cfb-bd2c-4d39e5c58fbf")
+		(property "Reference" "#PWR020"
+			(at 118.11 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 118.11 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 118.11 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 118.11 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 118.11 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b03fc314-a814-4445-8452-700fc90b0846")
+		)
+		(instances
+			(project "OpenLED"
+				(path "/9d3327ce-e007-4f54-8e19-0e924e6b729b"
+					(reference "#PWR020")
 					(unit 1)
 				)
 			)
@@ -3741,7 +4726,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e5b0084b-e726-4c12-b1dc-a23dc810ec83")
@@ -3807,6 +4792,199 @@
 			(project "OpenLED"
 				(path "/9d3327ce-e007-4f54-8e19-0e924e6b729b"
 					(reference "J4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 167.64 114.3 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e8d6f9b5-3dfd-4e8a-b111-ded47d5abf8a")
+		(property "Reference" "#PWR023"
+			(at 167.64 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+5V"
+			(at 167.64 109.22 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 167.64 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 167.64 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 167.64 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1b7c97f7-9017-47e8-be41-7af5f35c7f5f")
+		)
+		(instances
+			(project "OpenLED"
+				(path "/9d3327ce-e007-4f54-8e19-0e924e6b729b"
+					(reference "#PWR023")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 118.11 119.38 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e91588fc-83a3-42f8-aec1-1b9c8e2fc2bb")
+		(property "Reference" "C3"
+			(at 121.92 118.1099 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100nF"
+			(at 121.92 120.6499 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "lib:C_0402_1005Metric"
+			(at 119.0752 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://product.samsungsem.com/mlcc/CL05B104KO5NNN.do"
+			(at 118.11 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "100nF 16V X7R 0402 MLCC"
+			(at 118.11 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "CL05B104KO5NNNC"
+			(at 118.11 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 118.11 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C1525"
+			(at 118.11 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "96a59cfd-2f74-4478-b9a0-4e94cdf155a4")
+		)
+		(pin "1"
+			(uuid "acee1ff9-f9db-4b0e-8b1a-2fb56bb7da10")
+		)
+		(instances
+			(project "OpenLED"
+				(path "/9d3327ce-e007-4f54-8e19-0e924e6b729b"
+					(reference "C3")
 					(unit 1)
 				)
 			)

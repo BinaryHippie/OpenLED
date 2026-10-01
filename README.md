@@ -34,6 +34,7 @@ compatibility is treated as final.
 | Input connections | 5 V, GND, DIN solder pads |
 | Output connections | 5 V, GND, DOUT solder pads |
 | Bulk capacitance | 2x 10 uF |
+| Local decoupling | 4x 100 nF, one per LED |
 | PCB size | 37 x 7 mm |
 | PCB thickness | 0.8 mm |
 | Copper layers | 2 |
@@ -46,6 +47,7 @@ compatibility is treated as final.
 - Motor current must not be routed through the OpenLED PCB.
 - The board has no onboard MCU or LED protocol controller.
 - LED data enters at DIN and propagates through D1-D4 to DOUT.
+- Each LED has a dedicated 100 nF local decoupling capacitor.
 - Connections use solder pads rather than board-mounted connectors to minimise
   height and weight.
 - The PCB is 37 x 7 mm with 1 mm corner radii.

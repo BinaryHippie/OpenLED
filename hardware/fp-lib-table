@@ -2,5 +2,4 @@
 	(version 7)
 	(lib (name "lib") (type "KiCad") (uri "${KIPRJMOD}/lib.pretty") (options "") (descr "project-local footprints"))
 	(lib (name "OpenDrone") (type "KiCad") (uri "${KIPRJMOD}/KiCad-Library/footprint/OpenDrone.pretty") (options "") (descr "OpenDrone parts catalogue, submodule hardware/KiCad-Library"))
-	(lib (name "Capacitor_SMD") (type "KiCad") (uri "${KICAD10_FOOTPRINT_DIR}/Capacitor_SMD.pretty") (options "") (descr ""))
 )
