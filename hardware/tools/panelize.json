@@ -1,0 +1,51 @@
+{
+  "source": {
+    "type": "auto",
+    "tolerance": "15mm"
+  },
+  "layout": {
+    "type": "grid",
+    "rows": 4,
+    "cols": 1,
+    "hspace": "2mm",
+    "vspace": "3mm",
+    "renameref": "Board_{n}-{orig}"
+  },
+  "tabs": {
+    "type": "annotation",
+    "tabfootprints": "lib:Tab"
+  },
+  "cuts": {
+    "type": "mousebites",
+    "drill": "0.6mm",
+    "spacing": "1mm",
+    "offset": "-0.3mm",
+    "prolong": "0mm"
+  },
+  "framing": {
+    "type": "frame",
+    "width": "5mm",
+    "hspace": "3mm",
+    "vspace": "3mm",
+    "cuts": "none"
+  },
+  "tooling": {
+    "type": "3hole",
+    "hoffset": "3.85mm",
+    "voffset": "3.85mm",
+    "size": "2mm"
+  },
+  "fiducials": {
+    "type": "3fid",
+    "hoffset": "12mm",
+    "voffset": "3.85mm",
+    "coppersize": "1mm",
+    "opening": "2mm"
+  },
+  "post": {
+    "type": "auto",
+    "millradius": "1mm",
+    "script": "hardware/tools/panel_post.py",
+    "refillzones": false
+  }
+}

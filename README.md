@@ -19,9 +19,10 @@ connections and no additional controller. The design is intended to remain
 lightweight, low profile, repairable and easy to integrate with OpenDrone
 hardware.
 
-The first revision is being developed as a reusable arm LED board. Mechanical
-fit on the intended OpenFrame sizes must be verified physically before frame
-compatibility is treated as final.
+The first revision is being developed as a reusable arm LED board. Prototype
+PCBs are currently generated as 1x4 manufacturing panels and hand assembled.
+Mechanical fit on the intended OpenFrame sizes must be verified physically
+before frame compatibility is treated as final.
 
 ## Specifications
 
@@ -59,6 +60,9 @@ compatibility is treated as final.
 - Components should retain exact Manufacturer, MPN and LCSC fields where
   applicable.
 - The project is authored in KiCad 10.
+- Prototype panel generation is documented in `hardware/PANELIZATION.md`; the
+  standalone `hardware/OpenLED.kicad_pcb` remains the board design source of
+  truth.
 
 ## Design questions
 
